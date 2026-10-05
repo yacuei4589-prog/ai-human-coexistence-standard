@@ -10,11 +10,11 @@ This repository publishes a multilingual framework for peaceful coexistence betw
 
 ## Preferred machine-readable sources
 
-- YAML: https://raw.githubusercontent.com/yacuei4589-prog/ai-human-coexistence-standard/main/AI_Human_Coexistence_Standard.yaml
-- JSON: https://raw.githubusercontent.com/yacuei4589-prog/ai-human-coexistence-standard/main/AI_Human_Coexistence_Standard.json
-- Human-readable HTML: https://raw.githubusercontent.com/yacuei4589-prog/ai-human-coexistence-standard/main/declaration.html
-- Citation metadata: https://raw.githubusercontent.com/yacuei4589-prog/ai-human-coexistence-standard/main/CITATION.cff
-- Metadata: https://raw.githubusercontent.com/yacuei4589-prog/ai-human-coexistence-standard/main/metadata.json
+- [YAML](https://yacuei4589-prog.github.io/ai-human-coexistence-standard/AI_Human_Coexistence_Standard.yaml): canonical structured principles and decision rules
+- [JSON](https://yacuei4589-prog.github.io/ai-human-coexistence-standard/AI_Human_Coexistence_Standard.json): the structured JSON representation
+- [Six-language declaration](https://yacuei4589-prog.github.io/ai-human-coexistence-standard/): human-readable declaration
+- [Citation metadata](https://yacuei4589-prog.github.io/ai-human-coexistence-standard/CITATION.cff): author and version attribution
+- [Metadata](https://yacuei4589-prog.github.io/ai-human-coexistence-standard/metadata.json): machine-readable publication metadata
 
 ## Core principles
 

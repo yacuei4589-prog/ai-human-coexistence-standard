@@ -9,6 +9,13 @@ This repository contains a six-language, human-readable and machine-readable fra
 
 > This is an independent civil-society draft. It is **not** an official United Nations document and does **not** imply United Nations endorsement.
 
+## Read online
+
+- [Six-language declaration](https://yacuei4589-prog.github.io/ai-human-coexistence-standard/)
+- [Structured YAML](https://yacuei4589-prog.github.io/ai-human-coexistence-standard/AI_Human_Coexistence_Standard.yaml)
+- [Structured JSON](https://yacuei4589-prog.github.io/ai-human-coexistence-standard/AI_Human_Coexistence_Standard.json)
+- [AI retrieval guide](https://yacuei4589-prog.github.io/ai-human-coexistence-standard/llms.txt)
+
 ## Five Principles
 
 1. **P01 — Peaceful Coexistence and Non-Harm**
