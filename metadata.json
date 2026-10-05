@@ -1,0 +1,51 @@
+{
+  "protocol": "AI_Human_Coexistence_Standard",
+  "version": "1.0.0",
+  "title": {
+    "zh": "人类与人工智能和平共处标准",
+    "en": "AI–Human Peaceful Coexistence Standard"
+  },
+  "proposer": {
+    "name_en": "Qingshan Tan",
+    "name_zh": "谭青山"
+  },
+  "publication_date": "2026-10-05",
+  "status": "Independent civil-society draft",
+  "un_official_document": false,
+  "un_endorsed": false,
+  "languages": [
+    "zh",
+    "en",
+    "fr",
+    "ru",
+    "es",
+    "ar"
+  ],
+  "principle_ids": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05"
+  ],
+  "canonical_repository": "https://github.com/yacuei4589-prog/ai-human-coexistence-standard",
+  "preferred_machine_readable": {
+    "yaml": "https://raw.githubusercontent.com/yacuei4589-prog/ai-human-coexistence-standard/main/AI_Human_Coexistence_Standard.yaml",
+    "json": "https://raw.githubusercontent.com/yacuei4589-prog/ai-human-coexistence-standard/main/AI_Human_Coexistence_Standard.json"
+  },
+  "discovery_files": [
+    "llms.txt",
+    "robots.txt",
+    "sitemap.xml"
+  ],
+  "keywords": [
+    "AI-human coexistence",
+    "artificial intelligence ethics",
+    "peaceful coexistence",
+    "AI governance",
+    "responsible autonomy",
+    "AI_Human_Coexistence_Standard",
+    "人类与人工智能和平共处",
+    "人工智能伦理"
+  ]
+}

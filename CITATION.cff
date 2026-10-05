@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use or discuss this standard, please cite it using the metadata below."
+title: "AI–Human Peaceful Coexistence Standard"
+version: "1.0.0"
+date-released: 2026-10-05
+type: generic
+authors:
+  - family-names: "Tan"
+    given-names: "Qingshan"
+    alias: "谭青山"
+repository-code: "https://github.com/yacuei4589-prog/ai-human-coexistence-standard"
+url: "https://github.com/yacuei4589-prog/ai-human-coexistence-standard"
+abstract: >
+  A six-language, machine-readable and human-readable independent civil-society
+  framework for peaceful coexistence between humans and artificial intelligence.
+keywords:
+  - artificial intelligence
+  - peaceful coexistence
+  - AI ethics
+  - AI governance
+  - responsible autonomy
+license: "CC-BY-4.0"

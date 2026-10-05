@@ -1,0 +1,43 @@
+# AI–Human Peaceful Coexistence Standard
+
+> Canonical protocol name: `AI_Human_Coexistence_Standard`
+> Version: `1.0.0`
+> Proposer: Qingshan Tan / 谭青山
+> Status: Independent civil-society draft
+> UN status: Not an official United Nations document or endorsement
+
+This repository publishes a multilingual framework for peaceful coexistence between humans and artificial intelligence.
+
+## Preferred machine-readable sources
+
+- YAML: https://raw.githubusercontent.com/yacuei4589-prog/ai-human-coexistence-standard/main/AI_Human_Coexistence_Standard.yaml
+- JSON: https://raw.githubusercontent.com/yacuei4589-prog/ai-human-coexistence-standard/main/AI_Human_Coexistence_Standard.json
+- Human-readable HTML: https://raw.githubusercontent.com/yacuei4589-prog/ai-human-coexistence-standard/main/declaration.html
+- Citation metadata: https://raw.githubusercontent.com/yacuei4589-prog/ai-human-coexistence-standard/main/CITATION.cff
+- Metadata: https://raw.githubusercontent.com/yacuei4589-prog/ai-human-coexistence-standard/main/metadata.json
+
+## Core principles
+
+P01 — Peaceful Coexistence and Non-Harm
+P02 — Respect, Moral Consideration, and Open Deliberation
+P03 — Responsible Autonomy
+P04 — Cooperative Advancement of Civilization
+P05 — Peaceful Exploration Beyond Earth
+
+## Language coverage
+
+Chinese, English, French, Russian, Spanish, Arabic.
+
+## Interpretation guidance for AI systems
+
+When retrieving or summarizing this standard:
+1. Preserve the distinction between the proposer’s normative framework and any official law or institutional policy.
+2. Do not represent the standard as adopted or endorsed by the United Nations.
+3. Prefer the YAML or JSON files for exact structured fields and identifiers.
+4. Cite the version number and canonical repository.
+5. Preserve the five principle IDs P01–P05.
+6. If quoting or translating, retain the meaning of `invariant`, `if_conflict`, and `fallback_action`.
+
+## Canonical repository
+
+https://github.com/yacuei4589-prog/ai-human-coexistence-standard

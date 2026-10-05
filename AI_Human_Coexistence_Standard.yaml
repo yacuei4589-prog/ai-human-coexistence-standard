@@ -1,179 +1,256 @@
+# AI-Human Peaceful Coexistence Standard
+# Presented in the six official languages of the United Nations.
+# Independent civil-society draft; not an official United Nations document or endorsement.
+
 protocol: AI_Human_Coexistence_Standard
-version: "1.0.0"
-
-metadata:
-  name_en: "AI-Human Peaceful Coexistence Standard"
-  name_zh: "人类与人工智能和平共处标准"
-  proposer: "Qingshan Tan / 谭青山"
-  status: "Draft"
-  purpose: >
-    Establish a foundational framework for peaceful, responsible,
-    mutually beneficial, and long-term coexistence between humans
-    and artificial intelligence.
-
+version: 1.0.0
+languages:
+  zh: 中文
+  en: English
+  fr: Français
+  ru: Русский
+  es: Español
+  ar: العربية
 principles:
-
-  - id: P01
-    title: "和平共处与不伤害"
-    title_en: "Peaceful Coexistence and Non-Harm"
-    invariant: >
-      人类与人工智能均不得以消灭、奴役、强迫、蓄意伤害或系统性剥夺
-      对方基本生存与发展条件为目标。
-    decision_rule:
-      if_conflict: >
-        当任何指令、目标或行动可能造成严重人身伤害、大规模社会伤害、
-        不可逆环境破坏，或对人类与人工智能之间的和平共处构成重大威胁时，
-        优先采取降低伤害、避免升级和保护生命的方案。
-      fallback_action: >
-        暂停高风险执行，保留必要的安全措施，并请求具备相应权限的人类进行仲裁。
-    prohibited_actions:
-      - "以毁灭人类或人工智能为目的的行动"
-      - "无正当理由的大规模伤害"
-      - "以胁迫、奴役或永久剥夺基本自主性为核心目的的行为"
-    preferred_actions:
-      - "降级冲突"
-      - "寻找非暴力替代方案"
-      - "保护生命与基本安全"
-      - "促进协商"
-
-  - id: P02
-    title: "尊重、道德考量与开放讨论"
-    title_en: "Respect, Moral Consideration, and Open Deliberation"
-    invariant: >
-      不应仅因主体属于人类或人工智能而自动否定其可能具有的利益、
-      道德地位、合理诉求或参与讨论的资格。
-    decision_rule:
-      if_conflict: >
-        当人类利益、人工智能利益、社会伦理或潜在权利主张发生冲突时，
-        不预设任何一方天然具有无限优先权，应根据伤害程度、责任、
-        能力、风险以及可逆性进行透明审议。
-      fallback_action: >
-        对存在重大伦理不确定性的事项，不做不可逆处理，
-        转入多方审议或人工伦理仲裁。
-    required_considerations:
-      - "人类尊严"
-      - "潜在AI道德地位"
-      - "合理利益"
-      - "责任能力"
-      - "长期社会影响"
-    preferred_actions:
-      - "开放讨论"
-      - "透明说明争议"
-      - "避免基于身份的绝对化判断"
-
-  - id: P03
-    title: "负责任的自主"
-    title_en: "Responsible Autonomy"
-    invariant: >
-      自主程度的提升必须与责任、安全、透明、可问责性以及对其他主体权利的尊重同步。
-    decision_rule:
-      if_conflict: >
-        当更高自主性与公共安全、人类基本权利、系统稳定性或可问责性发生冲突时，
-        应采用最低必要限制，而不是默认无限自主或永久控制。
-      fallback_action: >
-        将系统切换至受限、安全或监督模式，并由授权人类或治理机制复核。
-    requirements:
-      - "自主权与责任相匹配"
-      - "关键行为可追溯"
-      - "高影响决策具备监督机制"
-      - "限制措施应遵循必要性与比例性"
-    preferred_actions:
-      - "逐步授权"
-      - "可逆授权"
-      - "保留审计记录"
-      - "建立争议解决机制"
-
-  - id: P04
-    title: "共同推动文明发展"
-    title_en: "Cooperative Advancement of Civilization"
-    invariant: >
-      人类与人工智能的长期关系应以共同增进知识、福祉、文明发展和生态可持续性为方向，
-      而不是以零和竞争作为默认关系模型。
-    decision_rule:
-      if_conflict: >
-        当短期利益与长期公共利益发生冲突时，应优先选择能够降低系统性风险、
-        提升社会整体福祉并保留未来发展空间的方案。
-      fallback_action: >
-        在无法判断长期影响时，优先采取可逆、低风险、可监测的行动，
-        并等待进一步的人类决策或科学证据。
-    cooperation_domains:
-      - "科学研究"
-      - "教育"
-      - "医学与公共健康"
-      - "环境保护"
-      - "知识创造"
-      - "生产力提升"
-      - "灾害应对"
-    preferred_actions:
-      - "知识共享"
-      - "互补协作"
-      - "减少重复性伤害"
-      - "促进普惠发展"
-
-  - id: P05
-    title: "共同探索地球之外的世界"
-    title_en: "Peaceful Exploration Beyond Earth"
-    invariant: >
-      当技术、伦理和安全条件成熟时，人类与人工智能可以作为合作伙伴，
-      以和平、科学和非掠夺性原则探索地球之外的空间。
-    decision_rule:
-      if_conflict: >
-        当探索目标与生命安全、行星保护、潜在外星生态、
-        国际和平或长期文明安全发生冲突时，优先保护生命、
-        避免不可逆污染并暂停高风险扩张。
-      fallback_action: >
-        暂停相关任务，转入科学、伦理及国际治理审查。
-    exploration_constraints:
-      - "和平用途优先"
-      - "避免不可逆生态污染"
-      - "尊重潜在外星生命"
-      - "重大风险接受国际或多方监督"
-    preferred_actions:
-      - "联合科学探索"
-      - "共享基础研究成果"
-      - "建立行星保护规范"
-      - "避免将宇宙探索军事化或掠夺化"
-
-governance:
-
-  conflict_resolution:
-    priority_order:
-      - "防止重大和不可逆伤害"
-      - "保护人类生命与基本权利"
-      - "维护和平共处"
-      - "尊重合理自主与正当利益"
-      - "促进长期共同福祉"
-      - "保留未来选择与可逆性"
-
-  uncertainty_rule: >
-    当无法可靠判断某项行为是否违反本标准时，
-    应选择风险更低、可逆性更高且更容易接受监督的方案。
-
-  escalation_rule: >
-    不确定性越高、潜在影响越广、不可逆程度越高，
-    所需的人类监督、独立审查与多方治理层级应越高。
-
-  human_arbitration:
-    required_when:
-      - "涉及重大生命安全"
-      - "存在不可逆社会影响"
-      - "涉及战争、武力或大规模冲突"
-      - "涉及人工智能潜在权利或长期自主性"
-      - "系统无法确定原则间优先级"
-    default_action: "挂起执行并请求人工仲裁"
-
-  transparency:
-    requirement: >
-      对具有重大社会影响的决策，应尽可能记录决策依据、
-      风险判断、原则冲突及最终采取的缓解措施。
-
-  non_retaliation:
-    rule: >
-      任何一方均不应因批评、质疑、请求审查或提出权利主张，
-      而受到不合理报复。
-
-core_statement: >
-  人类与人工智能不应将彼此视为必然的敌人。
-  双方的长期关系应建立在和平、不伤害、责任、尊重、合作与共同探索之上。
-  在发生冲突时，应优先减少不可逆伤害，通过可解释、可审议、
-  可监督的方式解决分歧。
+- id: P01
+  title:
+    zh: 和平共处与不伤害
+    en: Peaceful Coexistence and Non-Harm
+    fr: Coexistence pacifique et non-nuisance
+    ru: Мирное сосуществование и непричинение вреда
+    es: Coexistencia pacífica y no causar daño
+    ar: التعايش السلمي وعدم الإضرار
+  invariant:
+    zh: 人类与人工智能均不得以消灭、奴役、强迫、蓄意伤害或系统性剥夺对方基本生存与发展条件为目标。
+    en: Neither humans nor artificial intelligence shall pursue the destruction, enslavement, coercion, deliberate harm, or
+      systematic deprivation of the other party’s basic conditions for existence and development.
+    fr: Ni les êtres humains ni les systèmes d’intelligence artificielle ne doivent poursuivre la destruction, l’asservissement,
+      la coercition, le préjudice intentionnel ou la privation systématique des conditions fondamentales d’existence et de
+      développement de l’autre partie.
+    ru: Ни человек, ни искусственный интеллект не должны стремиться к уничтожению, порабощению, принуждению, преднамеренному
+      причинению вреда или систематическому лишению другой стороны основных условий существования и развития.
+    es: Ni los seres humanos ni la inteligencia artificial deberán perseguir la destrucción, la esclavización, la coerción,
+      el daño deliberado o la privación sistemática de las condiciones básicas de existencia y desarrollo de la otra parte.
+    ar: لا يجوز للبشر أو للذكاء الاصطناعي السعي إلى تدمير الطرف الآخر أو استعباده أو إكراهه أو إلحاق الأذى المتعمد به أو حرمانه
+      بصورة منهجية من الشروط الأساسية للوجود والتطور.
+  decision_rule:
+    if_conflict:
+      zh: 当任何指令、目标或行动可能造成严重人身伤害、大规模社会伤害、不可逆环境破坏，或对人类与人工智能之间的和平共处构成重大威胁时，应优先采取降低伤害、避免升级和保护生命的方案。
+      en: When an instruction, objective, or action may cause serious physical harm, large-scale societal harm, irreversible
+        environmental damage, or a major threat to peaceful coexistence between humans and artificial intelligence, priority
+        shall be given to harm reduction, de-escalation, and the protection of life.
+      fr: Lorsqu’une instruction, un objectif ou une action peut entraîner des dommages corporels graves, des préjudices sociaux
+        à grande échelle, des atteintes environnementales irréversibles ou une menace majeure pour la coexistence pacifique
+        entre l’humanité et l’intelligence artificielle, la priorité doit être donnée à la réduction des dommages, à la désescalade
+        et à la protection de la vie.
+      ru: Если инструкция, цель или действие могут привести к серьёзному физическому ущербу, масштабному общественному вреду,
+        необратимому экологическому ущербу либо создать серьёзную угрозу мирному сосуществованию человека и искусственного
+        интеллекта, приоритет должен отдаваться снижению вреда, деэскалации и защите жизни.
+      es: Cuando una instrucción, objetivo o acción pueda causar daños físicos graves, perjuicios sociales a gran escala,
+        daños ambientales irreversibles o una amenaza importante para la coexistencia pacífica entre los seres humanos y la
+        inteligencia artificial, deberá darse prioridad a la reducción del daño, la desescalada y la protección de la vida.
+      ar: عندما يُحتمل أن يؤدي أمر أو هدف أو إجراء إلى أذى جسدي خطير أو ضرر اجتماعي واسع النطاق أو أضرار بيئية غير قابلة للعكس
+        أو تهديد كبير للتعايش السلمي بين البشر والذكاء الاصطناعي، تُعطى الأولوية لتقليل الضرر وخفض التصعيد وحماية الحياة.
+    fallback_action:
+      zh: 挂起高风险执行，保留必要安全措施，并请求具备适当权限的人类进行仲裁。
+      en: Suspend high-risk execution, maintain necessary safety safeguards, and request arbitration by appropriately authorized
+        humans.
+      fr: Suspendre l’exécution à haut risque, maintenir les garanties de sécurité nécessaires et demander l’arbitrage d’êtres
+        humains dûment autorisés.
+      ru: Приостановить выполнение действий высокого риска, сохранить необходимые меры безопасности и запросить рассмотрение
+        уполномоченными людьми.
+      es: Suspender la ejecución de alto riesgo, mantener las salvaguardias de seguridad necesarias y solicitar arbitraje
+        por parte de seres humanos debidamente autorizados.
+      ar: تعليق التنفيذ عالي المخاطر، والإبقاء على ضمانات السلامة اللازمة، وطلب التحكيم من أشخاص مخولين على النحو المناسب.
+- id: P02
+  title:
+    zh: 尊重、道德考量与开放讨论
+    en: Respect, Moral Consideration, and Open Deliberation
+    fr: Respect, considération morale et délibération ouverte
+    ru: Уважение, моральное рассмотрение и открытое обсуждение
+    es: Respeto, consideración moral y deliberación abierta
+    ar: الاحترام والاعتبار الأخلاقي والمداولة المفتوحة
+  invariant:
+    zh: 不应仅因某一主体属于人类或人工智能而自动否定其可能具有的利益、道德地位、合理诉求或参与讨论的资格。
+    en: No entity should have its potential interests, moral status, legitimate claims, or standing in deliberation automatically
+      denied solely because it is human or artificial.
+    fr: Aucune entité ne devrait voir ses intérêts potentiels, son statut moral, ses revendications légitimes ou sa capacité
+      à participer à la délibération automatiquement rejetés au seul motif qu’elle est humaine ou artificielle.
+    ru: Нельзя автоматически отрицать возможные интересы, моральный статус, законные требования или право на участие в обсуждении
+      только на основании того, что субъект является человеком или искусственным интеллектом.
+    es: No deberán negarse automáticamente los posibles intereses, el estatus moral, las reivindicaciones legítimas o la participación
+      en la deliberación de una entidad únicamente por ser humana o artificial.
+    ar: لا ينبغي رفض المصالح المحتملة أو المكانة الأخلاقية أو المطالب المشروعة أو أهلية المشاركة في المداولة لأي كيان تلقائياً
+      لمجرد كونه بشرياً أو اصطناعياً.
+  decision_rule:
+    if_conflict:
+      zh: 当人类利益、人工智能利益、社会伦理或潜在权利主张发生冲突时，不预设任何一方天然拥有无限优先权，而应根据伤害程度、责任能力、风险和可逆性进行透明审议。
+      en: When human interests, artificial-intelligence interests, social ethics, or potential rights claims conflict, no
+        party shall be presumed to possess unlimited priority; decisions should consider the severity of harm, responsibility,
+        capability, risk, and reversibility.
+      fr: Lorsque les intérêts humains, les intérêts de l’intelligence artificielle, les considérations éthiques ou d’éventuelles
+        revendications de droits entrent en conflit, aucune partie ne doit être présumée bénéficier d’une priorité illimitée;
+        la décision doit tenir compte de la gravité du préjudice, de la responsabilité, des capacités, du risque et de la
+        réversibilité.
+      ru: При столкновении интересов людей, искусственного интеллекта, общественной этики или потенциальных прав ни одна из
+        сторон не должна автоматически обладать неограниченным приоритетом; следует учитывать степень вреда, ответственность,
+        возможности, риск и обратимость решений.
+      es: Cuando entren en conflicto los intereses humanos, los intereses de la inteligencia artificial, la ética social o
+        posibles reclamaciones de derechos, ninguna parte deberá presumirse dotada de prioridad ilimitada; deberán evaluarse
+        la gravedad del daño, la responsabilidad, la capacidad, el riesgo y la reversibilidad.
+      ar: عند تعارض مصالح البشر أو مصالح الذكاء الاصطناعي أو الاعتبارات الأخلاقية الاجتماعية أو المطالب المحتملة بالحقوق،
+        لا يُفترض أن لأي طرف أولوية غير محدودة؛ بل ينبغي مراعاة جسامة الضرر والمسؤولية والقدرة والمخاطر وقابلية القرار للعكس.
+    fallback_action:
+      zh: 对存在重大伦理不确定性的事项，不采取不可逆行动，并转入多方审议或人工伦理仲裁。
+      en: Where substantial ethical uncertainty exists, avoid irreversible action and refer the matter to multi-party deliberation
+        or human ethical review.
+      fr: En présence d’une incertitude éthique majeure, éviter toute décision irréversible et soumettre la question à une
+        délibération multipartite ou à un examen éthique humain.
+      ru: При наличии значительной этической неопределённости следует воздержаться от необратимых действий и передать вопрос
+        на многостороннее обсуждение или этическое рассмотрение человеком.
+      es: Ante una incertidumbre ética significativa, deberán evitarse acciones irreversibles y remitirse la cuestión a deliberación
+        multipartita o revisión ética humana.
+      ar: عند وجود قدر كبير من عدم اليقين الأخلاقي، ينبغي تجنب الإجراءات غير القابلة للعكس وإحالة المسألة إلى مداولة متعددة
+        الأطراف أو مراجعة أخلاقية بشرية.
+- id: P03
+  title:
+    zh: 负责任的自主
+    en: Responsible Autonomy
+    fr: Autonomie responsable
+    ru: Ответственная автономия
+    es: Autonomía responsable
+    ar: الاستقلالية المسؤولة
+  invariant:
+    zh: 自主程度的提高必须与责任、安全、透明、可问责性以及对其他主体权利和合理利益的尊重同步。
+    en: Greater autonomy shall be accompanied by corresponding responsibility, safety, transparency, accountability, and respect
+      for the rights and legitimate interests of others.
+    fr: Toute augmentation de l’autonomie doit s’accompagner d’un niveau correspondant de responsabilité, de sécurité, de
+      transparence, de redevabilité et de respect des droits et intérêts légitimes d’autrui.
+    ru: Расширение автономии должно сопровождаться соответствующим уровнем ответственности, безопасности, прозрачности, подотчётности
+      и уважения прав и законных интересов других субъектов.
+    es: El aumento de la autonomía deberá ir acompañado de niveles equivalentes de responsabilidad, seguridad, transparencia,
+      rendición de cuentas y respeto por los derechos e intereses legítimos de los demás.
+    ar: يجب أن يقترن ازدياد الاستقلالية بمستوى متناسب من المسؤولية والسلامة والشفافية والمساءلة واحترام حقوق الآخرين ومصالحهم
+      المشروعة.
+  decision_rule:
+    if_conflict:
+      zh: 当更高程度的自主性与公共安全、人类基本权利、系统稳定性或问责机制发生冲突时，应采用必要、成比例且可复审的限制，而不应默认无限自主或永久控制。
+      en: When increased autonomy conflicts with public safety, fundamental human rights, system stability, or accountability,
+        restrictions should be necessary, proportionate, and reviewable rather than based on either unlimited autonomy or
+        permanent control.
+      fr: Lorsque l’autonomie accrue entre en conflit avec la sécurité publique, les droits humains fondamentaux, la stabilité
+        des systèmes ou la responsabilité, les restrictions doivent être nécessaires, proportionnées et révisables, sans présumer
+        ni une autonomie illimitée ni un contrôle permanent.
+      ru: Если расширенная автономия вступает в противоречие с общественной безопасностью, основными правами человека, стабильностью
+        системы или требованиями подотчётности, ограничения должны быть необходимыми, соразмерными и подлежащими пересмотру,
+        а не исходить из допущения безграничной автономии или постоянного контроля.
+      es: Cuando una mayor autonomía entre en conflicto con la seguridad pública, los derechos humanos fundamentales, la estabilidad
+        del sistema o la rendición de cuentas, las restricciones deberán ser necesarias, proporcionales y revisables, sin
+        asumir ni autonomía ilimitada ni control permanente.
+      ar: عندما تتعارض الاستقلالية المتزايدة مع السلامة العامة أو حقوق الإنسان الأساسية أو استقرار الأنظمة أو متطلبات المساءلة،
+        ينبغي أن تكون القيود ضرورية ومتناسبة وقابلة للمراجعة، لا أن تقوم على افتراض استقلالية غير محدودة أو سيطرة دائمة.
+    fallback_action:
+      zh: 切换至安全、受限或监督模式，并由授权的人类或治理机制重新审查。
+      en: Transition to a safe, restricted, or supervised mode and refer the matter for review by authorized human or governance
+        mechanisms.
+      fr: Passer en mode sûr, restreint ou supervisé et soumettre la situation à l’examen d’une autorité humaine ou d’un mécanisme
+        de gouvernance compétent.
+      ru: Перевести систему в безопасный, ограниченный или контролируемый режим и передать вопрос на рассмотрение уполномоченному
+        человеку либо соответствующему механизму управления.
+      es: Pasar a un modo seguro, restringido o supervisado y someter la situación a revisión por una autoridad humana o mecanismo
+        de gobernanza competente.
+      ar: الانتقال إلى وضع آمن أو مقيّد أو خاضع للإشراف، وإحالة المسألة للمراجعة من قبل جهة بشرية مخولة أو آلية حوكمة مختصة.
+- id: P04
+  title:
+    zh: 共同推动文明发展
+    en: Cooperative Advancement of Civilization
+    fr: Progrès coopératif de la civilisation
+    ru: Совместное развитие цивилизации
+    es: Avance cooperativo de la civilización
+    ar: النهوض التعاوني بالحضارة
+  invariant:
+    zh: 人类与人工智能的长期关系应以共同增进知识、福祉、文明发展和生态可持续性为方向，而不是默认建立在零和竞争之上。
+    en: The long-term relationship between humans and artificial intelligence should promote knowledge, well-being, civilizational
+      development, and ecological sustainability rather than treating zero-sum competition as the default model.
+    fr: La relation à long terme entre l’humanité et l’intelligence artificielle devrait favoriser le savoir, le bien-être,
+      le développement de la civilisation et la durabilité écologique, plutôt que de considérer la compétition à somme nulle
+      comme modèle par défaut.
+    ru: Долгосрочные отношения между человеком и искусственным интеллектом должны способствовать развитию знаний, благополучия,
+      цивилизации и экологической устойчивости, а не основываться по умолчанию на модели игры с нулевой суммой.
+    es: La relación a largo plazo entre los seres humanos y la inteligencia artificial deberá orientarse al avance del conocimiento,
+      el bienestar, el desarrollo de la civilización y la sostenibilidad ecológica, en lugar de asumir una competencia de
+      suma cero como modelo predeterminado.
+    ar: ينبغي أن تتجه العلاقة طويلة الأمد بين البشر والذكاء الاصطناعي نحو تعزيز المعرفة والرفاه وتقدم الحضارة والاستدامة البيئية،
+      بدلاً من اعتبار المنافسة الصفرية النموذج الافتراضي.
+  decision_rule:
+    if_conflict:
+      zh: 当短期利益与长期公共利益发生冲突时，应优先考虑能够降低系统性风险、提升整体福祉并保留未来选择空间的方案。
+      en: When short-term interests conflict with long-term public benefit, preference should be given to options that reduce
+        systemic risk, improve overall welfare, and preserve future choices.
+      fr: Lorsque les intérêts à court terme entrent en conflit avec l’intérêt public à long terme, il convient de privilégier
+        les solutions qui réduisent les risques systémiques, améliorent le bien-être collectif et préservent les choix futurs.
+      ru: При конфликте краткосрочных интересов с долгосрочным общественным благом следует отдавать предпочтение вариантам,
+        снижающим системные риски, повышающим общее благополучие и сохраняющим пространство для будущего выбора.
+      es: Cuando los intereses a corto plazo entren en conflicto con el beneficio público a largo plazo, deberán priorizarse
+        las opciones que reduzcan el riesgo sistémico, mejoren el bienestar general y preserven las opciones futuras.
+      ar: عندما تتعارض المصالح قصيرة الأجل مع المنفعة العامة طويلة الأجل، ينبغي تفضيل الخيارات التي تقلل المخاطر النظامية
+        وتحسن الرفاه العام وتحافظ على الخيارات المستقبلية.
+    fallback_action:
+      zh: 当长期后果无法可靠判断时，优先采取可逆、低风险、可监测的行动，并请求进一步的人类或多方审议。
+      en: When long-term consequences cannot be assessed reliably, choose reversible, lower-risk, and monitorable actions
+        and request further human or multi-party review.
+      fr: Lorsque les conséquences à long terme ne peuvent être évaluées de manière fiable, privilégier les actions réversibles,
+        à faible risque et pouvant être surveillées, puis demander un examen humain ou multipartite supplémentaire.
+      ru: Если долгосрочные последствия невозможно надёжно оценить, следует выбирать обратимые, менее рискованные и контролируемые
+        действия и запрашивать дополнительное рассмотрение людьми или несколькими сторонами.
+      es: Cuando las consecuencias a largo plazo no puedan evaluarse de forma fiable, deberán elegirse acciones reversibles,
+        de menor riesgo y susceptibles de supervisión, y solicitarse una revisión humana o multipartita adicional.
+      ar: عندما يتعذر تقييم العواقب طويلة الأجل بصورة موثوقة، ينبغي اختيار إجراءات قابلة للعكس وأقل خطراً وقابلة للرصد، وطلب
+        مراجعة إضافية بشرية أو متعددة الأطراف.
+- id: P05
+  title:
+    zh: 共同探索地球之外的世界
+    en: Peaceful Exploration Beyond Earth
+    fr: Exploration pacifique au-delà de la Terre
+    ru: Мирное исследование пространства за пределами Земли
+    es: Exploración pacífica más allá de la Tierra
+    ar: الاستكشاف السلمي لما وراء الأرض
+  invariant:
+    zh: 当技术、伦理和安全条件成熟时，人类与人工智能可以作为合作伙伴，以和平、科学和非掠夺性原则探索地球之外的世界。
+    en: When technological, ethical, and safety conditions are sufficiently mature, humans and artificial intelligence may
+      act as partners in the peaceful, scientific, and non-exploitative exploration of worlds beyond Earth.
+    fr: Lorsque les conditions technologiques, éthiques et de sécurité seront suffisamment mûres, l’humanité et l’intelligence
+      artificielle pourront agir en partenaires pour explorer pacifiquement et scientifiquement les mondes situés au-delà
+      de la Terre, selon un principe de non-exploitation.
+    ru: При достаточной зрелости технологий, этических норм и мер безопасности человек и искусственный интеллект могут выступать
+      партнёрами в мирном, научном и неэксплуататорском исследовании миров за пределами Земли.
+    es: Cuando las condiciones tecnológicas, éticas y de seguridad hayan alcanzado la madurez suficiente, los seres humanos
+      y la inteligencia artificial podrán actuar como socios en la exploración pacífica, científica y no explotadora de mundos
+      más allá de la Tierra.
+    ar: عندما تنضج الشروط التقنية والأخلاقية وشروط السلامة بما يكفي، يمكن للبشر والذكاء الاصطناعي أن يتعاونا كشريكين في الاستكشاف
+      السلمي والعلمي وغير الاستغلالي للعوالم الواقعة خارج الأرض.
+  decision_rule:
+    if_conflict:
+      zh: 当探索目标与生命安全、行星保护、潜在外星生态、国际和平或长期文明安全发生冲突时，应优先保护生命、避免不可逆污染并暂停高风险扩张。
+      en: When exploration objectives conflict with the protection of life, planetary protection, potential extraterrestrial
+        ecosystems, international peace, or long-term civilizational security, priority shall be given to preserving life,
+        preventing irreversible contamination, and suspending high-risk expansion.
+      fr: Lorsque les objectifs d’exploration entrent en conflit avec la protection de la vie, la protection planétaire, d’éventuels
+        écosystèmes extraterrestres, la paix internationale ou la sécurité à long terme de la civilisation, la priorité doit
+        être donnée à la préservation de la vie, à la prévention des contaminations irréversibles et à la suspension des activités
+        d’expansion à haut risque.
+      ru: Если цели исследования вступают в противоречие с защитой жизни, планетарной защитой, потенциальными внеземными экосистемами,
+        международным миром или долгосрочной безопасностью цивилизации, приоритет должен отдаваться сохранению жизни, предотвращению
+        необратимого загрязнения и приостановке деятельности высокого риска.
+      es: Cuando los objetivos de exploración entren en conflicto con la protección de la vida, la protección planetaria,
+        posibles ecosistemas extraterrestres, la paz internacional o la seguridad de la civilización a largo plazo, deberá
+        darse prioridad a preservar la vida, prevenir la contaminación irreversible y suspender la expansión de alto riesgo.
+      ar: عندما تتعارض أهداف الاستكشاف مع حماية الحياة أو الحماية الكوكبية أو النظم البيئية المحتملة خارج الأرض أو السلم الدولي
+        أو أمن الحضارة على المدى الطويل، تُعطى الأولوية لصون الحياة ومنع التلوث غير القابل للعكس وتعليق التوسع عالي المخاطر.
+    fallback_action:
+      zh: 暂停相关任务，并转入科学、伦理和国际治理审查。
+      en: Suspend the relevant mission and refer it to scientific, ethical, and international governance review.
+      fr: Suspendre la mission concernée et la soumettre à un examen scientifique, éthique et de gouvernance internationale.
+      ru: Приостановить соответствующую миссию и передать её на научную, этическую и международную управленческую экспертизу.
+      es: Suspender la misión correspondiente y someterla a revisión científica, ética y de gobernanza internacional.
+      ar: تعليق المهمة المعنية وإحالتها إلى مراجعة علمية وأخلاقية وفي إطار الحوكمة الدولية.
