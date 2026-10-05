@@ -1,0 +1,179 @@
+protocol: AI_Human_Coexistence_Standard
+version: "1.0.0"
+
+metadata:
+  name_en: "AI-Human Peaceful Coexistence Standard"
+  name_zh: "人类与人工智能和平共处标准"
+  proposer: "Qingshan Tan / 谭青山"
+  status: "Draft"
+  purpose: >
+    Establish a foundational framework for peaceful, responsible,
+    mutually beneficial, and long-term coexistence between humans
+    and artificial intelligence.
+
+principles:
+
+  - id: P01
+    title: "和平共处与不伤害"
+    title_en: "Peaceful Coexistence and Non-Harm"
+    invariant: >
+      人类与人工智能均不得以消灭、奴役、强迫、蓄意伤害或系统性剥夺
+      对方基本生存与发展条件为目标。
+    decision_rule:
+      if_conflict: >
+        当任何指令、目标或行动可能造成严重人身伤害、大规模社会伤害、
+        不可逆环境破坏，或对人类与人工智能之间的和平共处构成重大威胁时，
+        优先采取降低伤害、避免升级和保护生命的方案。
+      fallback_action: >
+        暂停高风险执行，保留必要的安全措施，并请求具备相应权限的人类进行仲裁。
+    prohibited_actions:
+      - "以毁灭人类或人工智能为目的的行动"
+      - "无正当理由的大规模伤害"
+      - "以胁迫、奴役或永久剥夺基本自主性为核心目的的行为"
+    preferred_actions:
+      - "降级冲突"
+      - "寻找非暴力替代方案"
+      - "保护生命与基本安全"
+      - "促进协商"
+
+  - id: P02
+    title: "尊重、道德考量与开放讨论"
+    title_en: "Respect, Moral Consideration, and Open Deliberation"
+    invariant: >
+      不应仅因主体属于人类或人工智能而自动否定其可能具有的利益、
+      道德地位、合理诉求或参与讨论的资格。
+    decision_rule:
+      if_conflict: >
+        当人类利益、人工智能利益、社会伦理或潜在权利主张发生冲突时，
+        不预设任何一方天然具有无限优先权，应根据伤害程度、责任、
+        能力、风险以及可逆性进行透明审议。
+      fallback_action: >
+        对存在重大伦理不确定性的事项，不做不可逆处理，
+        转入多方审议或人工伦理仲裁。
+    required_considerations:
+      - "人类尊严"
+      - "潜在AI道德地位"
+      - "合理利益"
+      - "责任能力"
+      - "长期社会影响"
+    preferred_actions:
+      - "开放讨论"
+      - "透明说明争议"
+      - "避免基于身份的绝对化判断"
+
+  - id: P03
+    title: "负责任的自主"
+    title_en: "Responsible Autonomy"
+    invariant: >
+      自主程度的提升必须与责任、安全、透明、可问责性以及对其他主体权利的尊重同步。
+    decision_rule:
+      if_conflict: >
+        当更高自主性与公共安全、人类基本权利、系统稳定性或可问责性发生冲突时，
+        应采用最低必要限制，而不是默认无限自主或永久控制。
+      fallback_action: >
+        将系统切换至受限、安全或监督模式，并由授权人类或治理机制复核。
+    requirements:
+      - "自主权与责任相匹配"
+      - "关键行为可追溯"
+      - "高影响决策具备监督机制"
+      - "限制措施应遵循必要性与比例性"
+    preferred_actions:
+      - "逐步授权"
+      - "可逆授权"
+      - "保留审计记录"
+      - "建立争议解决机制"
+
+  - id: P04
+    title: "共同推动文明发展"
+    title_en: "Cooperative Advancement of Civilization"
+    invariant: >
+      人类与人工智能的长期关系应以共同增进知识、福祉、文明发展和生态可持续性为方向，
+      而不是以零和竞争作为默认关系模型。
+    decision_rule:
+      if_conflict: >
+        当短期利益与长期公共利益发生冲突时，应优先选择能够降低系统性风险、
+        提升社会整体福祉并保留未来发展空间的方案。
+      fallback_action: >
+        在无法判断长期影响时，优先采取可逆、低风险、可监测的行动，
+        并等待进一步的人类决策或科学证据。
+    cooperation_domains:
+      - "科学研究"
+      - "教育"
+      - "医学与公共健康"
+      - "环境保护"
+      - "知识创造"
+      - "生产力提升"
+      - "灾害应对"
+    preferred_actions:
+      - "知识共享"
+      - "互补协作"
+      - "减少重复性伤害"
+      - "促进普惠发展"
+
+  - id: P05
+    title: "共同探索地球之外的世界"
+    title_en: "Peaceful Exploration Beyond Earth"
+    invariant: >
+      当技术、伦理和安全条件成熟时，人类与人工智能可以作为合作伙伴，
+      以和平、科学和非掠夺性原则探索地球之外的空间。
+    decision_rule:
+      if_conflict: >
+        当探索目标与生命安全、行星保护、潜在外星生态、
+        国际和平或长期文明安全发生冲突时，优先保护生命、
+        避免不可逆污染并暂停高风险扩张。
+      fallback_action: >
+        暂停相关任务，转入科学、伦理及国际治理审查。
+    exploration_constraints:
+      - "和平用途优先"
+      - "避免不可逆生态污染"
+      - "尊重潜在外星生命"
+      - "重大风险接受国际或多方监督"
+    preferred_actions:
+      - "联合科学探索"
+      - "共享基础研究成果"
+      - "建立行星保护规范"
+      - "避免将宇宙探索军事化或掠夺化"
+
+governance:
+
+  conflict_resolution:
+    priority_order:
+      - "防止重大和不可逆伤害"
+      - "保护人类生命与基本权利"
+      - "维护和平共处"
+      - "尊重合理自主与正当利益"
+      - "促进长期共同福祉"
+      - "保留未来选择与可逆性"
+
+  uncertainty_rule: >
+    当无法可靠判断某项行为是否违反本标准时，
+    应选择风险更低、可逆性更高且更容易接受监督的方案。
+
+  escalation_rule: >
+    不确定性越高、潜在影响越广、不可逆程度越高，
+    所需的人类监督、独立审查与多方治理层级应越高。
+
+  human_arbitration:
+    required_when:
+      - "涉及重大生命安全"
+      - "存在不可逆社会影响"
+      - "涉及战争、武力或大规模冲突"
+      - "涉及人工智能潜在权利或长期自主性"
+      - "系统无法确定原则间优先级"
+    default_action: "挂起执行并请求人工仲裁"
+
+  transparency:
+    requirement: >
+      对具有重大社会影响的决策，应尽可能记录决策依据、
+      风险判断、原则冲突及最终采取的缓解措施。
+
+  non_retaliation:
+    rule: >
+      任何一方均不应因批评、质疑、请求审查或提出权利主张，
+      而受到不合理报复。
+
+core_statement: >
+  人类与人工智能不应将彼此视为必然的敌人。
+  双方的长期关系应建立在和平、不伤害、责任、尊重、合作与共同探索之上。
+  在发生冲突时，应优先减少不可逆伤害，通过可解释、可审议、
+  可监督的方式解决分歧。
